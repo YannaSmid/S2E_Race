@@ -47,12 +47,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Mod Assets\ModResources\Scripts\BallGame\EmitParticlesOnBallBounce.cs" />
      <Compile Include="Assets\Mod Assets\ModResources\Scripts\Kart\Jiggler.cs" />
      <Compile Include="Assets\Mod Assets\ModResources\Scripts\Platformer\EmitParticlesOnLand.cs" />
-     <Compile Include="Assets\Mod Assets\ModResources\Scripts\Kart\EmitParticlesOnKartBounce.cs" />
      <Compile Include="Assets\Mod Assets\ModResources\Scripts\Kart\SimpleTrigger.cs" />
      <Compile Include="Assets\Mod Assets\ModResources\Scripts\Backend\TemplateEditorDetection.cs" />
+     <Compile Include="Assets\Mod Assets\ModResources\Scripts\BallGame\EmitParticlesOnBallBounce.cs" />
+     <Compile Include="Assets\Mod Assets\ModResources\Scripts\Kart\EmitParticlesOnKartBounce.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Karting\Art\Fonts\ApacheLicense2.0.txt" />
@@ -709,17 +709,17 @@
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/nikki/OneDrive/Documenten/GitHub/S2E_Race/Racing/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
- <Reference Include="Unity.PlasticSCM.Editor">
- <HintPath>C:/Users/nikki/OneDrive/Documenten/GitHub/S2E_Race/Racing/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+ <Reference Include="Unity.InputSystem">
+ <HintPath>C:/Users/nikki/OneDrive/Documenten/GitHub/S2E_Race/Racing/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Postprocessing.Editor">
+ <HintPath>C:/Users/nikki/OneDrive/Documenten/GitHub/S2E_Race/Racing/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
  <HintPath>C:/Users/nikki/OneDrive/Documenten/GitHub/S2E_Race/Racing/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Play.Publisher.Editor">
  <HintPath>C:/Users/nikki/OneDrive/Documenten/GitHub/S2E_Race/Racing/Library/ScriptAssemblies/Unity.Play.Publisher.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Postprocessing.Editor">
- <HintPath>C:/Users/nikki/OneDrive/Documenten/GitHub/S2E_Race/Racing/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Users/nikki/OneDrive/Documenten/GitHub/S2E_Race/Racing/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
@@ -730,14 +730,17 @@
  <Reference Include="Unity.EditorCoroutines.Editor">
  <HintPath>C:/Users/nikki/OneDrive/Documenten/GitHub/S2E_Race/Racing/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.PlasticSCM.Editor">
+ <HintPath>C:/Users/nikki/OneDrive/Documenten/GitHub/S2E_Race/Racing/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.ML-Agents.CommunicatorObjects">
  <HintPath>C:/Users/nikki/OneDrive/Documenten/GitHub/S2E_Race/Racing/Library/ScriptAssemblies/Unity.ML-Agents.CommunicatorObjects.dll</HintPath>
  </Reference>
- <Reference Include="Unity.InternalAPIEditorBridgeDev.001">
- <HintPath>C:/Users/nikki/OneDrive/Documenten/GitHub/S2E_Race/Racing/Library/ScriptAssemblies/Unity.InternalAPIEditorBridgeDev.001.dll</HintPath>
- </Reference>
  <Reference Include="Unity.Mathematics">
  <HintPath>C:/Users/nikki/OneDrive/Documenten/GitHub/S2E_Race/Racing/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.InternalAPIEditorBridgeDev.001">
+ <HintPath>C:/Users/nikki/OneDrive/Documenten/GitHub/S2E_Race/Racing/Library/ScriptAssemblies/Unity.InternalAPIEditorBridgeDev.001.dll</HintPath>
  </Reference>
  <Reference Include="Cinemachine">
  <HintPath>C:/Users/nikki/OneDrive/Documenten/GitHub/S2E_Race/Racing/Library/ScriptAssemblies/Cinemachine.dll</HintPath>

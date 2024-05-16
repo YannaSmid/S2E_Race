@@ -47,10 +47,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Karting\Scripts\Editor\RequireInterfaceAttributeDrawer.cs" />
-     <Compile Include="Assets\Karting\Scripts\Editor\AutoLockUILayer.cs" />
      <Compile Include="Assets\Karting\Scripts\Editor\ShaderBuildStripping.cs" />
      <Compile Include="Assets\Karting\Scripts\Editor\MiniProfiler.cs" />
+     <Compile Include="Assets\Karting\Scripts\Editor\RequireInterfaceAttributeDrawer.cs" />
+     <Compile Include="Assets\Karting\Scripts\Editor\AutoLockUILayer.cs" />
      <None Include="Assets\Karting\Scripts\Editor\KartGame.Editor.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

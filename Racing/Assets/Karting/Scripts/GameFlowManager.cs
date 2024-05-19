@@ -140,7 +140,8 @@ public class GameFlowManager : MonoBehaviour
         else
         {
             if (m_ObjectiveManager.AreAllObjectivesCompleted())
-                EndGame(true);
+                //EndGame(true);
+                Debug.Log("ALL OBJECTIVES COMPLETED");
 
             if (m_TimeManager.IsFinite && m_TimeManager.IsOver)
                 EndGame(false);

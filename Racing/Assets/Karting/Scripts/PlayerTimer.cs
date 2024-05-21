@@ -4,12 +4,10 @@ using UnityEngine.UI;
 public class PlayerTimer : MonoBehaviour
 {
     public Text timerText; // UI Text to display the timer
-    private float startTime;
     private bool timerRunning;
 
     void Start()
     {
-        startTime = Time.time;
         timerRunning = true;
     }
 
@@ -17,7 +15,7 @@ public class PlayerTimer : MonoBehaviour
     {
         if (timerRunning)
         {
-            float t = Time.time - startTime;
+            float t = Time.time;
             string minutes = ((int)t / 60).ToString();
             string seconds = (t % 60).ToString("f2");
             timerText.text = minutes + ":" + seconds;

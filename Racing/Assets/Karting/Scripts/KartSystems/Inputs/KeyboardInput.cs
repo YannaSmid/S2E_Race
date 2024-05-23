@@ -33,7 +33,7 @@ namespace KartGame.KartSystems
             bool accelerate = Input.GetButton(accelerateButtonName);
             bool brake = Input.GetButton(brakeButtonName);
 
-            Debug.Log($"{player} Turn: {turn}, Accelerate: {accelerate}, Brake: {brake}");
+            //Debug.Log($"{player} Turn: {turn}, Accelerate: {accelerate}, Brake: {brake}");
 
             return new InputData
             {

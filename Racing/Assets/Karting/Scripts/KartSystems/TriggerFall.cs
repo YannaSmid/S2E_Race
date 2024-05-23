@@ -21,21 +21,25 @@ public class TriggerFall : MonoBehaviour
     public Vector3 pos = new Vector3(0f, 0f, 0f);
     public Transform return_pos;
     public Vector3 return_rotation;
+
+    // For displaying the message
+    //PickupObject message;
     
     GameObject mainCamera;
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.Find("KartClassic_Player").transform;
+        player = GameObject.Find("KartClassic_Player2").transform;
 
-        mainCamera = GameObject.Find("Main Camera");
-        hud = GameObject.Find("GameManager").transform.Find("GameHUD").transform.Find("HUD");
+        mainCamera = GameObject.Find("Player2Camera");
+        hud = GameObject.Find("HUD2").transform;
 
         pos = this.transform.position;
         
         return_pos = this.transform.Find("return");
         return_rotation = new Vector3(0f, 0f, 0f);
+
     }
 
     // Update is called once per frame
@@ -65,11 +69,12 @@ public class TriggerFall : MonoBehaviour
     {
         if (!falling){
             Debug.Log("I'm FALLING again, I'm FALLING again, I'm FAAAALLLLLIIINGGGGG");
-            blackscreen = hud.transform.Find("BlackOut").gameObject;
+            blackscreen = hud.Find("BlackOut").gameObject;
             player.gameObject.GetComponent<ArcadeKart>().SetCanMove(false);
             blackscreen.SetActive(true);
             black = blackscreen.GetComponent<Image>();
             falling = true;
+            
         }
 
     }

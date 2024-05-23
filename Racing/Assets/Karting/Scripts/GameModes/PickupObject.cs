@@ -28,12 +28,12 @@ public class PickupObject : TargetObject
         Register();
     }
 
-    void OnCollect()
+    public void OnCollect()
     {
-        if (CollectSound)
-        {
-            AudioUtility.CreateSFX(CollectSound, transform.position, AudioUtility.AudioGroups.Pickup, 0f);
-        }
+        // if (CollectSound)
+        // {
+        //     //AudioUtility.CreateSFX(CollectSound, transform.position, AudioUtility.AudioGroups.Pickup, 0f);
+        // }
 
         if (spawnPrefabOnPickup)
         {
@@ -41,9 +41,9 @@ public class PickupObject : TargetObject
             Destroy(vfx, destroySpawnPrefabDelay);
         }
 
-        Objective.OnUnregisterPickup(this);
+        //Objective.OnUnregisterPickup(this);
 
-        TimeManager.OnAdjustTime(TimeGained);
+        //TimeManager.OnAdjustTime(TimeGained);
 
         if (!displayed)
         {
@@ -80,11 +80,11 @@ public class PickupObject : TargetObject
         messagePrefab.ReturnWithDelay(messageInstance, 0f); // Adjust the return logic as per your pooling system
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        if ((layerMask.value & 1 << other.gameObject.layer) > 0 && other.gameObject.CompareTag("Player"))
-        {
-            OnCollect();
-        }
-    }
+    // void OnTriggerEnter(Collider other)
+    // {
+    //     if ((layerMask.value & 1 << other.gameObject.layer) > 0 && other.gameObject.CompareTag("Player"))
+    //     {
+    //         OnCollect();
+    //     }
+    // }
 }

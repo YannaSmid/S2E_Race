@@ -95,14 +95,18 @@ public class TriggerFall : MonoBehaviour
 
     void Display()
     {
-        // Assume DisplayMessageManager handles the pooling and positioning of the message prefab
-        DisplayMessageManager displayMessageManager = FindObjectOfType<DisplayMessageManager>();
+        // Retrieve the correct HUD based on the player. Here we assume player is Player 2 and should use HUD2
+        var hud2Canvas = GameObject.Find("HUD2").GetComponent<Canvas>(); // Ensure HUD2 is the targeted Canvas
+        DisplayMessageManager displayMessageManager = hud2Canvas.GetComponent<DisplayMessageManager>();
 
         if (displayMessageManager != null)
         {
             var messageInstance = messagePrefab.getObject(true, displayMessageManager.DisplayMessageRect.transform);
-            NotificationToast notification = messageInstance.GetComponent<NotificationToast>();
+            messageInstance.transform.localPosition = Vector3.zero; // Centers the message
+            messageInstance.transform.localRotation = Quaternion.identity; // Resets rotation
+            messageInstance.transform.localScale = Vector3.one; // Ensures scale is not altered
 
+            NotificationToast notification = messageInstance.GetComponent<NotificationToast>();
             if (notification != null)
             {
                 notification.Initialize(message);
@@ -110,9 +114,8 @@ public class TriggerFall : MonoBehaviour
                 StartCoroutine(ReturnMessageWithDelay(notification.gameObject, notification.TotalRunTime));
             }
         }
-
-        displayed = true;
     }
+
 
     IEnumerator ReturnMessageWithDelay(GameObject messageInstance, float delay)
     {

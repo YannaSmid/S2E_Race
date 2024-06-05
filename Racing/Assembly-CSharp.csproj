@@ -54,6 +54,7 @@
      <Compile Include="Assets\FinishPoints.cs" />
      <Compile Include="Assets\Mod Assets\ModResources\Scripts\Kart\SimpleTrigger.cs" />
      <Compile Include="Assets\Mod Assets\ModResources\Scripts\Backend\TemplateEditorDetection.cs" />
+     <Compile Include="Assets\RecordingManager.cs" />
      <Compile Include="Assets\GameHandler.cs" />
      <Compile Include="Assets\Mod Assets\ModResources\Scripts\BallGame\EmitParticlesOnBallBounce.cs" />
      <Compile Include="Assets\PopUp.cs" />

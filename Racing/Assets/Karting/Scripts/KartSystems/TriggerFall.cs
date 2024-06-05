@@ -87,15 +87,16 @@ public class TriggerFall : MonoBehaviour
             black = blackscreen.GetComponent<Image>();
             falling = true;
 
-            Display();
-
+            // When being back on the ground after falling
+            Display(); // Show popup
+            StartCoroutine(DisableKartTemporarily()); // Controls off
         }
 
     }
 
     void Display()
     {
-        // Retrieve the correct HUD based on the player. Here we assume player is Player 2 and should use HUD2
+        // Retrieve the correct HUD (HUD2) based on the player
         var hud2Canvas = GameObject.Find("HUD2").GetComponent<Canvas>(); // Ensure HUD2 is the targeted Canvas
         DisplayMessageManager displayMessageManager = hud2Canvas.GetComponent<DisplayMessageManager>();
 
@@ -120,6 +121,23 @@ public class TriggerFall : MonoBehaviour
     IEnumerator ReturnMessageWithDelay(GameObject messageInstance, float delay)
     {
         yield return new WaitForSeconds(delay);
-        messagePrefab.ReturnWithDelay(messageInstance, 0f); // Adjust the return logic as per your pooling system
+        messagePrefab.ReturnWithDelay(messageInstance, 0f);
+    }
+
+    IEnumerator DisableKartTemporarily()
+    {
+        ArcadeKart kart = player.GetComponent<ArcadeKart>();
+        if (kart != null)
+        {
+            Debug.Log("Disabling ArcadeKart script.");
+            kart.enabled = false;  // Disable the ArcadeKart script --> disable movement
+            yield return new WaitForSeconds(10);  // Wait for 10 seconds
+            kart.enabled = true;  // Re-enable the ArcadeKart script
+            Debug.Log("Enabling ArcadeKart script.");
+        }
+        else
+        {
+            Debug.LogError("ArcadeKart script not found on the player object.");
+        }
     }
 }

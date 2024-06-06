@@ -22,6 +22,9 @@ public class TriggerFall : MonoBehaviour
     public Transform return_pos;
     public Vector3 return_rotation;
 
+    CoinsHandler2 coinshandler;
+    
+
     // For displaying the message
     //PickupObject message;
 
@@ -51,6 +54,8 @@ public class TriggerFall : MonoBehaviour
         
         return_pos = this.transform.Find("return");
         return_rotation = new Vector3(0f, 0f, 0f);
+
+        coinshandler = GameObject.Find("CoinsHandler2").GetComponent<CoinsHandler2>();
 
     }
 
@@ -87,6 +92,9 @@ public class TriggerFall : MonoBehaviour
             black = blackscreen.GetComponent<Image>();
             falling = true;
 
+            // Lose money
+            coinshandler.totalMoney -= 100;
+            coinshandler.updateMoney = true;
             // When being back on the ground after falling
             Display(); // Show popup
             StartCoroutine(DisableKartTemporarily()); // Controls off

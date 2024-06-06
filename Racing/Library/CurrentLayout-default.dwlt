@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 330
+  controlID: 95
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 331
+  controlID: 16
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -399,23 +399,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 6c640000b41b00004e640000a21b0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 7ec3ffff82d4fffffee5ffff1efbffff744b0000325200003a6b0000cc720000
+      m_ExpandedIDs: 1efbffff304c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Coin (3)
+        m_OriginalName: Coin (3)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -9074
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -462,9 +462,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1384.7354, y: 3.5798526, z: -1.7907202}
+    m_Target: {x: 1356.4122, y: 30.827751, z: -28.389957}
     speed: 2
-    m_Value: {x: 1384.7354, y: 3.5798526, z: -1.7907202}
+    m_Value: {x: 1356.4122, y: 30.827751, z: -28.389957}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -511,13 +511,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.09466573, y: -0.013985928, z: 0.0013424266, w: 0.99545276}
+    m_Target: {x: 0.30855376, y: 0.029437803, z: -0.009544285, w: 0.9507494}
     speed: 2
-    m_Value: {x: 0.0946617, y: -0.013985333, z: 0.0013423695, w: 0.9954104}
+    m_Value: {x: 0.30854025, y: 0.029436516, z: -0.009543868, w: 0.9507078}
   m_Size:
-    m_Target: 0.047090013
+    m_Target: 1.0404005
     speed: 2
-    m_Value: 0.047090013
+    m_Value: 1.0404005
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -607,22 +607,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Karting/Scenes
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 43
   m_LastFolders:
-  - Assets/Karting/Scenes
+  - Assets
   m_LastFoldersGridSize: 43
   m_LastProjectPath: C:\Github\S2E_Race\Racing
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: fe630000
-    m_LastClickedID: 25598
-    m_ExpandedIDs: 000000006a6100006c6100006e6100007061000000ca9a3b
+    m_SelectedIDs: 84610000
+    m_LastClickedID: 24964
+    m_ExpandedIDs: 000000007e61000080610000826100008461000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -650,7 +650,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006a6100006c6100006e61000070610000
+    m_ExpandedIDs: 000000007e610000806100008261000084610000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

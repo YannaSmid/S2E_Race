@@ -51,6 +51,7 @@
      <Compile Include="Assets\PlayerController.cs" />
      <Compile Include="Assets\Mod Assets\ModResources\Scripts\Kart\Jiggler.cs" />
      <Compile Include="Assets\Mod Assets\ModResources\Scripts\Platformer\EmitParticlesOnLand.cs" />
+     <Compile Include="Assets\ChangeScene.cs" />
      <Compile Include="Assets\FinishPoints.cs" />
      <Compile Include="Assets\Mod Assets\ModResources\Scripts\Kart\SimpleTrigger.cs" />
      <Compile Include="Assets\Mod Assets\ModResources\Scripts\Backend\TemplateEditorDetection.cs" />

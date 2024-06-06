@@ -20,7 +20,7 @@ public class TriggerFall : MonoBehaviour
     // for position
     public Vector3 pos = new Vector3(0f, 0f, 0f);
     public Transform return_pos;
-    public Vector3 return_rotation;
+    public Quaternion return_rotation;
 
     CoinsHandler2 coinshandler;
     
@@ -53,7 +53,7 @@ public class TriggerFall : MonoBehaviour
         pos = this.transform.position;
         
         return_pos = this.transform.Find("return");
-        return_rotation = new Vector3(0f, 0f, 0f);
+        return_rotation = return_pos.transform.rotation;
 
         coinshandler = GameObject.Find("CoinsHandler2").GetComponent<CoinsHandler2>();
 
@@ -71,7 +71,7 @@ public class TriggerFall : MonoBehaviour
             // still determine the time of the blackout in regards to the popup
             else {
                 player.position = return_pos.position;
-                player.rotation = Quaternion.Euler(return_rotation);
+                player.rotation = return_rotation;
                 black.color = new Color(0f, 0f, 0f, 0f);
                 falling = false;
                 player.gameObject.GetComponent<ArcadeKart>().SetCanMove(true);

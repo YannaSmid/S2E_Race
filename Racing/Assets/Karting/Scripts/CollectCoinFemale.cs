@@ -9,14 +9,12 @@ public class CollectCoinFemale : MonoBehaviour
     public bool collected = false;
     CoinsHandler2 coinshandler;
 
-    // private Transform coinsinfo;
-    // public TMP_Text counterText;
+    public float rotation_speed = 0.5f;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        // coinsinfo = GameObject.Find("HUD2").transform.Find("CoinsInfo");
-        // counterText = coinsinfo.Find("Text").gameObject.GetComponent<TMP_Text>();
 
         coinshandler = GameObject.Find("CoinsHandler2").GetComponent<CoinsHandler2>();
     }
@@ -24,7 +22,7 @@ public class CollectCoinFemale : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        this.transform.Rotate(0.0f, 1.0f * rotation_speed, 0.0f, Space.Self);
     }
 
     void OnTriggerEnter(Collider other){

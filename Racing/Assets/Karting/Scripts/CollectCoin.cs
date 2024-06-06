@@ -8,14 +8,11 @@ public class CollectCoin : MonoBehaviour
     public bool collected = false;
     CoinsHandler coinshandler;
 
-    private Transform coinsinfo;
-    public TMP_Text counterText;
+    public float rotation_speed = 0.5f;
 
     // Start is called before the first frame update
     void Start()
     {
-        coinsinfo = GameObject.Find("HUD1").transform.Find("CoinsInfo");
-        counterText = coinsinfo.Find("Text").gameObject.GetComponent<TMP_Text>();
 
         coinshandler = GameObject.Find("CoinsHandler").GetComponent<CoinsHandler>();
     }
@@ -23,7 +20,7 @@ public class CollectCoin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        this.transform.Rotate(0.0f, 1.0f * rotation_speed, 0.0f, Space.Self);
     }
 
     void OnTriggerEnter(Collider other){

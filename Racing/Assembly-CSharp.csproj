@@ -60,8 +60,6 @@
      <Compile Include="Assets\PopUp.cs" />
      <Compile Include="Assets\Mod Assets\ModResources\Scripts\Kart\EmitParticlesOnKartBounce.cs" />
      <Compile Include="Assets\CheckPoints.cs" />
-     <Compile Include="Assets\CoinsHandler.cs" />
-     <Compile Include="Assets\CollectCoin.cs" />
      <Compile Include="Assets\FinishLine.cs" />
      <Compile Include="Assets\PopUpScript.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />

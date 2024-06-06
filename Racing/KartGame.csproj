@@ -68,6 +68,7 @@
      <Compile Include="Assets\Karting\Scripts\Utilities\MeshCombineUtility.cs" />
      <Compile Include="Assets\Karting\Scripts\Utilities\LayerMaskExtensions.cs" />
      <Compile Include="Assets\Karting\Scripts\UI\FeedbackFlashHUD.cs" />
+     <Compile Include="Assets\Karting\Scripts\CoinsHandler2.cs" />
      <Compile Include="Assets\Karting\Scripts\Utilities\DebugUtility.cs" />
      <Compile Include="Assets\Karting\Scripts\GameModes\CrashObject.cs" />
      <Compile Include="Assets\Karting\Scripts\KartSystems\KartAudio\EngineAudio.cs" />
@@ -99,6 +100,7 @@
      <Compile Include="Assets\Karting\Scripts\KartSystems\KartAudio\EngineAudio.Stroke.cs" />
      <Compile Include="Assets\Karting\Scripts\Utilities\BuildSettingsDisplay.cs" />
      <Compile Include="Assets\Karting\Scripts\Objective.cs" />
+     <Compile Include="Assets\Karting\Scripts\CollectCoinFemale.cs" />
      <Compile Include="Assets\Karting\Scripts\UI\InGameInfo.cs" />
      <Compile Include="Assets\Karting\Scripts\KartSystems\TriggerFall.cs" />
      <Compile Include="Assets\Karting\Scripts\ArcadeKartPowerup.cs" />
@@ -110,6 +112,8 @@
      <Compile Include="Assets\Karting\Scripts\KartSystems\Inputs\BaseInput.cs" />
      <Compile Include="Assets\Karting\Scripts\UI\ToggleGameObjectButton.cs" />
      <Compile Include="Assets\Karting\Scripts\PrefabReplacerOnInstance.cs" />
+     <Compile Include="Assets\Karting\Scripts\CoinsHandler.cs" />
+     <Compile Include="Assets\Karting\Scripts\CollectCoin.cs" />
      <Compile Include="Assets\Karting\Scripts\GameModes\ObjectiveCompleteLaps.cs" />
      <Compile Include="Assets\Karting\Scripts\Track\TimeDisplay.cs" />
      <Compile Include="Assets\Karting\Scripts\UI\VersionDisplay.cs" />

@@ -72,7 +72,7 @@ public class TriggerFall : MonoBehaviour
             else {
                 player.position = return_pos.position;
                 player.rotation = return_rotation;
-                black.color = new Color(0f, 0f, 0f, 0f);
+                //
                 falling = false;
                 player.gameObject.GetComponent<ArcadeKart>().SetCanMove(true);
             }
@@ -86,12 +86,8 @@ public class TriggerFall : MonoBehaviour
     {
         if (!falling){
             Debug.Log("I'm FALLING again, I'm FALLING again, I'm FAAAALLLLLIIINGGGGG");
-            blackscreen = hud.Find("BlackOut").gameObject;
+            
             player.gameObject.GetComponent<ArcadeKart>().SetCanMove(false);
-            blackscreen.SetActive(true);
-            black = blackscreen.GetComponent<Image>();
-            falling = true;
-
             // Lose money
             coinshandler.totalMoney -= 100;
             coinshandler.updateMoney = true;
@@ -107,6 +103,8 @@ public class TriggerFall : MonoBehaviour
         // Retrieve the correct HUD (HUD2) based on the player
         var hud2Canvas = GameObject.Find("HUD2").GetComponent<Canvas>(); // Ensure HUD2 is the targeted Canvas
         DisplayMessageManager displayMessageManager = hud2Canvas.GetComponent<DisplayMessageManager>();
+        black = displayMessageManager.DisplayMessageRect.GetComponent<Image>();
+        falling = true;
 
         if (displayMessageManager != null)
         {
@@ -121,6 +119,7 @@ public class TriggerFall : MonoBehaviour
                 notification.Initialize(message);
                 displayMessageManager.DisplayMessageRect.UpdateTable(notification.gameObject);
                 StartCoroutine(ReturnMessageWithDelay(notification.gameObject, notification.TotalRunTime));
+             
             }
         }
     }
@@ -140,6 +139,7 @@ public class TriggerFall : MonoBehaviour
             Debug.Log("Disabling ArcadeKart script.");
             kart.enabled = false;  // Disable the ArcadeKart script --> disable movement
             yield return new WaitForSeconds(10);  // Wait for 10 seconds
+            black.color = new Color(0f, 0f, 0f, 0f);
             kart.enabled = true;  // Re-enable the ArcadeKart script
             Debug.Log("Enabling ArcadeKart script.");
         }

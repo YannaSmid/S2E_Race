@@ -24,7 +24,7 @@ public class CoinsHandler2 : MonoBehaviour
     {
         if (updateMoney){
             if (totalMoney <= 0){
-                counterText.text = "000";
+                counterText.text = "0000";
                 totalMoney = 0;
             }
             else {

@@ -37,7 +37,7 @@ public class GameHandler : MonoBehaviour
     }
 
     void ReachedFinish(){
-        Debug.Log("Yippie");
+        //Debug.Log("Yippie");
         finishline.canFinish = true;
     }
 }

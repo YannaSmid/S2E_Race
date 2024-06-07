@@ -82,6 +82,7 @@
      <Compile Include="Assets\Karting\Scripts\KartSystems\Inputs\KeyboardInput.cs" />
      <Compile Include="Assets\Karting\Scripts\Utilities\AudioUtility.cs" />
      <Compile Include="Assets\Karting\Scripts\Utilities\RotateOnAxis.cs" />
+     <Compile Include="Assets\Karting\Scripts\KartSystems\StartMessage.cs" />
      <Compile Include="Assets\Karting\Scripts\Utilities\DictionaryExtensions.cs" />
      <Compile Include="Assets\Karting\Scripts\CinemachineCameraManager.cs" />
      <Compile Include="Assets\Karting\Scripts\KartSystems\ArcadeKart.cs" />

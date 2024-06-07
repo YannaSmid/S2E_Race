@@ -52,9 +52,11 @@
      <Compile Include="Assets\Mod Assets\ModResources\Scripts\Kart\Jiggler.cs" />
      <Compile Include="Assets\Mod Assets\ModResources\Scripts\Platformer\EmitParticlesOnLand.cs" />
      <Compile Include="Assets\ChangeScene.cs" />
+     <Compile Include="Assets\MenuButtonHandler.cs" />
      <Compile Include="Assets\FinishPoints.cs" />
      <Compile Include="Assets\Mod Assets\ModResources\Scripts\Kart\SimpleTrigger.cs" />
      <Compile Include="Assets\Mod Assets\ModResources\Scripts\Backend\TemplateEditorDetection.cs" />
+     <Compile Include="Assets\MenuButton.cs" />
      <Compile Include="Assets\RecordingManager.cs" />
      <Compile Include="Assets\GameHandler.cs" />
      <Compile Include="Assets\Mod Assets\ModResources\Scripts\BallGame\EmitParticlesOnBallBounce.cs" />

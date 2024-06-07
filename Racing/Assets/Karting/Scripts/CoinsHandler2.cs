@@ -23,8 +23,14 @@ public class CoinsHandler2 : MonoBehaviour
     void Update()
     {
         if (updateMoney){
-            counterText.text = totalMoney.ToString();
-            updateMoney = false;
+            if (totalMoney <= 0){
+                counterText.text = "000";
+                totalMoney = 0;
+            }
+            else {
+                counterText.text = totalMoney.ToString();
+                updateMoney = false;
+            }
         }
     }
 }

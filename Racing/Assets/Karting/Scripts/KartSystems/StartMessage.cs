@@ -44,7 +44,8 @@ public class StartMessage : MonoBehaviour
             if (canvasGroup != null)
             {
                 canvasGroup.alpha = 0; // Forcefully set the transparency to 0
-                Destroy(messageInstance); // Destroy if not using pooling
+                // Instead of destroying, deactivate the GameObject
+                messageInstance.SetActive(false);
             }
         }
     }

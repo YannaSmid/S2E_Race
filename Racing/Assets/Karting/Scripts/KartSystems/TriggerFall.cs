@@ -7,6 +7,7 @@ using KartGame.KartSystems;
 public class TriggerFall : MonoBehaviour
 {
     private bool falling = false;
+    bool respawn = false;
 
     public Transform player;
 
@@ -71,8 +72,8 @@ public class TriggerFall : MonoBehaviour
 
             // still determine the time of the blackout in regards to the popup
             else {
-                player.position = return_pos.position;
-                player.rotation = return_rotation;
+                // player.position = return_pos.position;
+                // player.rotation = return_rotation;
                 //
                 falling = false;
                 //player.gameObject.GetComponent<ArcadeKart>().SetCanMove(true);
@@ -80,6 +81,12 @@ public class TriggerFall : MonoBehaviour
             // controls off
             // show popup
             // call function that shows popup
+        }
+
+        if (respawn){
+            player.position = return_pos.position;
+            player.rotation = return_rotation;
+            respawn = false;
         }
     }
 
@@ -142,7 +149,7 @@ public class TriggerFall : MonoBehaviour
             Debug.Log("Disabling ArcadeKart script.");
             kart.enabled = false;  // Disable the ArcadeKart script --> disable movement
             yield return new WaitForSeconds(10);  // Wait for 10 seconds
-       
+            respawn = true;
             black.color = new Color(0f, 0f, 0f, 0f);
             kart.enabled = true;  // Re-enable the ArcadeKart script
 

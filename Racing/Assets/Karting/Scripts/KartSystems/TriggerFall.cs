@@ -68,13 +68,14 @@ public class TriggerFall : MonoBehaviour
                 black.color += new Color(0f, 0f, 0f, fading_rate * Time.deltaTime);
 
             }
+
             // still determine the time of the blackout in regards to the popup
             else {
                 player.position = return_pos.position;
                 player.rotation = return_rotation;
                 //
                 falling = false;
-                player.gameObject.GetComponent<ArcadeKart>().SetCanMove(true);
+                //player.gameObject.GetComponent<ArcadeKart>().SetCanMove(true);
             }
             // controls off
             // show popup
@@ -87,12 +88,12 @@ public class TriggerFall : MonoBehaviour
         if (!falling){
             Debug.Log("I'm FALLING again, I'm FALLING again, I'm FAAAALLLLLIIINGGGGG");
             
-            player.gameObject.GetComponent<ArcadeKart>().SetCanMove(false);
+            //player.gameObject.GetComponent<ArcadeKart>().SetCanMove(false);
             // Lose money
             coinshandler.totalMoney -= 100;
             coinshandler.totalLost += 100;
             coinshandler.updateMoney = true;
-            // When being back on the ground after falling
+    
             Display(); // Show popup
             StartCoroutine(DisableKartTemporarily()); // Controls off
         }
@@ -101,11 +102,12 @@ public class TriggerFall : MonoBehaviour
 
     void Display()
     {
+        falling = true;
         // Retrieve the correct HUD (HUD2) based on the player
         var hud2Canvas = GameObject.Find("HUD2").GetComponent<Canvas>(); // Ensure HUD2 is the targeted Canvas
         DisplayMessageManager displayMessageManager = hud2Canvas.GetComponent<DisplayMessageManager>();
         black = displayMessageManager.DisplayMessageRect.GetComponent<Image>();
-        falling = true;
+        
 
         if (displayMessageManager != null)
         {
@@ -140,8 +142,10 @@ public class TriggerFall : MonoBehaviour
             Debug.Log("Disabling ArcadeKart script.");
             kart.enabled = false;  // Disable the ArcadeKart script --> disable movement
             yield return new WaitForSeconds(10);  // Wait for 10 seconds
+       
             black.color = new Color(0f, 0f, 0f, 0f);
             kart.enabled = true;  // Re-enable the ArcadeKart script
+
             Debug.Log("Enabling ArcadeKart script.");
         }
         else

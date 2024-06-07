@@ -119,10 +119,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 1059
-  m_MinSize: {x: 679, y: 342}
-  m_MaxSize: {x: 12004, y: 8042}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 24
+  controlID: 52
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,10 +144,10 @@ MonoBehaviour:
     y: 0
     width: 1501
     height: 1059
-  m_MinSize: {x: 403, y: 342}
-  m_MaxSize: {x: 8003, y: 8042}
+  m_MinSize: {x: 403, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 25
+  controlID: 142
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 26
+  controlID: 143
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -246,14 +246,14 @@ MonoBehaviour:
     y: 738
     width: 1501
     height: 321
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 17}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -398,24 +398,24 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 28}
-      m_SelectedIDs: 8e4e0000
-      m_LastClickedID: 20110
-      m_ExpandedIDs: 1efbffff584d0000d24d0000aa4e00001c4f0000364f0000b45000000c540000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: d2e6ffff1efbffff72530000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: KartClassic_Player2
-        m_OriginalName: KartClassic_Player2
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 20110
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -462,9 +462,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1369.1195, y: 1.697463, z: -4.944257}
+    m_Target: {x: 1382.3652, y: 2.2784822, z: 0.45324945}
     speed: 2
-    m_Value: {x: 1369.1195, y: 1.697463, z: -4.944257}
+    m_Value: {x: 1382.3652, y: 2.2784822, z: 0.45324945}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -511,13 +511,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.21177238, y: -0.61541784, z: 0.17656985, w: 0.73854524}
+    m_Target: {x: 0.12560102, y: 0.078572005, z: -0.009910742, w: 0.9890244}
     speed: 2
-    m_Value: {x: 0.21201445, y: -0.614244, z: 0.17623325, w: 0.73938894}
+    m_Value: {x: 0.12558742, y: 0.07856349, z: -0.009909668, w: 0.98891723}
   m_Size:
-    m_Target: 5.4635005
+    m_Target: 2.1888976
     speed: 2
-    m_Value: 5.4635005
+    m_Value: 2.1888976
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -607,36 +607,36 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Karting/Materials
+    - Assets/Mod Assets/ModResources/Textures
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 43
   m_LastFolders:
-  - Assets/Karting/Materials
+  - Assets/Mod Assets/ModResources/Textures
   m_LastFoldersGridSize: 43
   m_LastProjectPath: C:\Github\S2E_Race\Racing
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: e8620000
-    m_LastClickedID: 25320
-    m_ExpandedIDs: 00000000c6620000c8620000ca620000cc62000000ca9a3b
+    scrollPos: {x: 0, y: 460}
+    m_SelectedIDs: a06a0000
+    m_LastClickedID: 27296
+    m_ExpandedIDs: 00000000d6620000d8620000da620000dc620000706500007a650000186a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Scripts
+      m_OriginalName: Scripts
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 25968
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
@@ -650,7 +650,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c6620000c8620000ca620000cc620000
+    m_ExpandedIDs: 00000000d6620000d8620000da620000dc620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -678,7 +678,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c623000000000000ae670000
+    m_ExpandedInstanceIDs: c623000000000000ae670000b66a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

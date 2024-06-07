@@ -24,6 +24,7 @@ public class TriggerFall : MonoBehaviour
     public Quaternion return_rotation;
 
     CoinsHandler2 coinshandler;
+    timebar bar;
     
 
     // For displaying the message
@@ -57,6 +58,7 @@ public class TriggerFall : MonoBehaviour
         return_rotation = return_pos.transform.rotation;
 
         coinshandler = GameObject.Find("CoinsHandler2").GetComponent<CoinsHandler2>();
+        bar = hud.Find("BarHolder").GetComponent<timebar>();
 
     }
 
@@ -137,6 +139,7 @@ public class TriggerFall : MonoBehaviour
 
     IEnumerator ReturnMessageWithDelay(GameObject messageInstance, float delay)
     {
+        bar.startcount = true;
         yield return new WaitForSeconds(delay);
         messagePrefab.ReturnWithDelay(messageInstance, 0f);
     }

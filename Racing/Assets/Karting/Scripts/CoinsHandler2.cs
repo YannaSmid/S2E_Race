@@ -6,6 +6,7 @@ using TMPro;
 public class CoinsHandler2 : MonoBehaviour
 {
     public int totalMoney = 0;
+    public int totalLost = 0;
     public bool updateMoney = false;
 
     private Transform coinsinfo;

@@ -13,11 +13,6 @@ public class FinishPoints : MonoBehaviour
         point_nr = int.Parse(this.gameObject.name);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other){
         gameHandler.check_points[point_nr] = true;

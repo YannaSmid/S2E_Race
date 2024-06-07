@@ -90,6 +90,7 @@ public class TriggerFall : MonoBehaviour
             player.gameObject.GetComponent<ArcadeKart>().SetCanMove(false);
             // Lose money
             coinshandler.totalMoney -= 100;
+            coinshandler.totalLost += 100;
             coinshandler.updateMoney = true;
             // When being back on the ground after falling
             Display(); // Show popup

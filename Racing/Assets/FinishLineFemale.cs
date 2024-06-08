@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using KartGame.KartSystems;
 
 public class FinishLineFemale : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class FinishLineFemale : MonoBehaviour
     public Image endcolor; // color of the display message rectangle
     public Color finishColor;
     public float fading_rate = 1.5f;
+    public Transform player;
 
 
     // For the end message
@@ -31,6 +33,7 @@ public class FinishLineFemale : MonoBehaviour
         // Retrieve the correct HUD (HUD2) based on the player
         hud2Canvas = GameObject.Find("HUD2").GetComponent<Canvas>(); // Ensure HUD2 is the targeted Canvas
         hud2MessageManager = hud2Canvas.GetComponent<DisplayMessageManager>();
+        player = GameObject.Find("KartClassic_Player2").transform;
     }
 
     // Update is called once per frame
@@ -46,10 +49,16 @@ public class FinishLineFemale : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other){
+        ArcadeKart kart = player.GetComponent<ArcadeKart>();
         if (canFinish){
            
             Debug.Log("Player reached Finish");
             finished = true;
+            Rigidbody playerRigidbody = player.GetComponent<Rigidbody>();
+            if (playerRigidbody != null)
+            {
+                StartCoroutine(FreezeDelay(playerRigidbody));  // Start the coroutine
+            }
             endcolor.color = finishColor;
             money = coinshandler.totalMoney;
             moneylost = coinshandler.totalLost;
@@ -58,9 +67,21 @@ public class FinishLineFemale : MonoBehaviour
             Debug.Log("Display Message");
             //StartCoroutine(DisableKartTemporarily()); // Controls off
 
+            if (kart != null)
+            {
+                Debug.Log("Disabling ArcadeKart script.");
+                kart.enabled = false;  // Disable the ArcadeKart script --> disable movement
+            }
+            else
+            {
+                Debug.LogError("ArcadeKart script not found on the player object.");
+            }
+
+
         }
 
     }
+
 
     private void DisplayEndMessage(){
          
@@ -87,4 +108,11 @@ public class FinishLineFemale : MonoBehaviour
         yield return new WaitForSeconds(delay);
         messagePrefab.ReturnWithDelay(messageInstance, 0f);
     }
+
+    IEnumerator FreezeDelay(Rigidbody playerRigidbody)
+    {
+        yield return new WaitForSeconds(0.47f);  // Wait
+        playerRigidbody.constraints = RigidbodyConstraints.FreezePosition;  // Apply the freeze constraint
+    }
+
 }

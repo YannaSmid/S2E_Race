@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using KartGame.KartSystems;
+using UnityEngine.SceneManagement;
 
 public class FinishLineFemale : MonoBehaviour
 {
@@ -107,6 +108,7 @@ public class FinishLineFemale : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         messagePrefab.ReturnWithDelay(messageInstance, 0f);
+        SceneManager.LoadScene("RecordingScene");
     }
 
     IEnumerator FreezeDelay(Rigidbody playerRigidbody)

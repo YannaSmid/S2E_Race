@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using KartGame.KartSystems;
+using UnityEngine.SceneManagement;
 
 public class TriggerFall : MonoBehaviour
 {
@@ -44,6 +45,8 @@ public class TriggerFall : MonoBehaviour
 
     GameObject mainCamera;
 
+    private RecordingManager recManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,6 +62,8 @@ public class TriggerFall : MonoBehaviour
 
         coinshandler = GameObject.Find("CoinsHandler2").GetComponent<CoinsHandler2>();
         bar = hud.Find("BarHolder").GetComponent<timebar>();
+
+        recManager = GameObject.Find("RecordingManager").GetComponent<RecordingManager>();
 
     }
 
@@ -77,6 +82,9 @@ public class TriggerFall : MonoBehaviour
                 // player.position = return_pos.position;
                 // player.rotation = return_rotation;
                 //
+                if (SceneManager.GetActiveScene().name == "MainScene"){
+                    recManager.stopFem = true;
+                }
                 falling = false;
                 //player.gameObject.GetComponent<ArcadeKart>().SetCanMove(true);
             }
@@ -88,6 +96,9 @@ public class TriggerFall : MonoBehaviour
         if (respawn){
             player.position = return_pos.position;
             player.rotation = return_rotation;
+            if (SceneManager.GetActiveScene().name == "MainScene"){
+                recManager.stopFem = false;
+            }
             respawn = false;
         }
     }

@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class FinishLineFemale : MonoBehaviour
 {
     public bool canFinish = false;
-    private bool finished = false;
 
     private Canvas hud2Canvas;
     private DisplayMessageManager hud2MessageManager;
@@ -48,7 +47,6 @@ public class FinishLineFemale : MonoBehaviour
         if (canFinish){
            
             Debug.Log("Player reached Finish");
-            finished = true;
             money = coinshandler.totalMoney;
             moneylost = coinshandler.totalLost;
             message = $"Well done! Despite the gaps in the road, you managed to reach the finishline. In total, you have been granted {money} coins with your research, which also involves women! But lost a total of {moneylost} coins by the complications it brings to collect data on women.";

@@ -10,12 +10,6 @@ public class StartMessage : MonoBehaviour
     [Tooltip("Prefab for the message")]
     public PoolObjectDef messagePrefab;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        Display();
-    }
-
     void Display()
     {
         var hudCanvas = GameObject.Find("HUD").GetComponent<Canvas>();

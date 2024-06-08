@@ -19,6 +19,7 @@ ScriptsOnlyBuild:
     - Cinemachine.CinemachineVirtualCamera
     - Cinemachine.NoiseSettings
     KartGame.dll:
+    - ArcadeKartPowerup
     - AudioManager
     - CoinsHandler
     - CoinsHandler2
@@ -264,6 +265,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4914}
     - Class: 114
       Script: {instanceID: 4924}
+    - Class: 114
+      Script: {instanceID: 4936}
     - Class: 114
       Script: {instanceID: 5076}
     - Class: 114
@@ -1653,7 +1656,7 @@ ScriptsOnlyBuild:
     className: SceneObjectGUIDComponent
   - hash:
       serializedVersion: 2
-      Hash: 74dd9845d36123aa5107e69474d1bca0
+      Hash: cb78c6a1cfc24a5802b8e815c6920170
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RecordingManager
@@ -1797,7 +1800,7 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
-      Hash: d294114f77757d99ba374d1f144ee228
+      Hash: 35dcb248d5a25accc75c46194817b8a2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FinishLineFemale
@@ -1845,7 +1848,7 @@ ScriptsOnlyBuild:
     className: KartAgent
   - hash:
       serializedVersion: 2
-      Hash: 896cd36928f545715741497d44dd2192
+      Hash: 1d3def8c59c6fe1bcb3e61f249fb3ff8
     assemblyName: KartGame.dll
     namespaceName: 
     className: CollectCoinFemale
@@ -2163,7 +2166,7 @@ ScriptsOnlyBuild:
     className: CinemachineStateDrivenCamera
   - hash:
       serializedVersion: 2
-      Hash: 896cd36928f545715741497d44dd2192
+      Hash: 1d3def8c59c6fe1bcb3e61f249fb3ff8
     assemblyName: KartGame.dll
     namespaceName: 
     className: CollectCoin
@@ -2205,7 +2208,7 @@ ScriptsOnlyBuild:
     className: LensDistortion
   - hash:
       serializedVersion: 2
-      Hash: cbc55a44327639026feef8a4e303defe
+      Hash: 1a6e58ff7512589abee83abb8c5c6708
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FinishLine
@@ -2274,4 +2277,4 @@ ScriptsOnlyBuild:
   - Assets/Karting/Scenes/Menu.unity
   - Assets/Karting/Scenes/MainScene.unity
   - Assets/Karting/Scenes/RecordingScene.unity
-  playerPath: C:/Users/nikki/OneDrive/Bureaublad/race/Racing.exe
+  playerPath: C:/Users/nikki/OneDrive/Bureaublad/YANKIII/Racing.exe

@@ -82,9 +82,9 @@ public class TriggerFall : MonoBehaviour
                 // player.position = return_pos.position;
                 // player.rotation = return_rotation;
                 //
-                if (SceneManager.GetActiveScene().name == "MainScene"){
-                    recManager.stopFem = true;
-                }
+                // if (SceneManager.GetActiveScene().name == "MainScene"){
+                //     recManager.stopFem = true;
+                // }
                 falling = false;
                 //player.gameObject.GetComponent<ArcadeKart>().SetCanMove(true);
             }
@@ -94,11 +94,11 @@ public class TriggerFall : MonoBehaviour
         }
 
         if (respawn){
+            //  if (SceneManager.GetActiveScene().name == "MainScene"){
+            //     recManager.stopFem = false;
+            // }
             player.position = return_pos.position;
             player.rotation = return_rotation;
-            if (SceneManager.GetActiveScene().name == "MainScene"){
-                recManager.stopFem = false;
-            }
             respawn = false;
         }
     }

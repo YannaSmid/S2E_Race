@@ -8,8 +8,9 @@ public class CollectCoinFemale : MonoBehaviour
 {
     public bool collected = false;
     CoinsHandler2 coinshandler;
-
     public float rotation_speed = 0.5f;
+    public AudioClip collectSound;
+    public float soundVolume = 0.2f;
 
 
     // Start is called before the first frame update
@@ -33,6 +34,14 @@ public class CollectCoinFemale : MonoBehaviour
             coinshandler.updateMoney = true;
             //counterText.text = coinshandler.totalMoney.ToString();
             Debug.Log(" Collect the coinzzz");
+
+            GameObject audioObject = new GameObject("CoinSound");
+            AudioSource audioSource = audioObject.AddComponent<AudioSource>();
+            audioSource.clip = collectSound;
+            audioSource.volume = soundVolume; // Stel het volume in
+            audioSource.Play();
+            Destroy(audioObject, collectSound.length);
+
             this.gameObject.SetActive(false);
         }
 

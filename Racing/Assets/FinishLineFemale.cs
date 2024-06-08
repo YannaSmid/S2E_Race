@@ -6,10 +6,12 @@ using UnityEngine.UI;
 public class FinishLineFemale : MonoBehaviour
 {
     public bool canFinish = false;
+    private bool finished = false;
 
     private Canvas hud2Canvas;
     private DisplayMessageManager hud2MessageManager;
     public Image endcolor; // color of the display message rectangle
+    public Color finishColor;
     public float fading_rate = 1.5f;
 
 
@@ -34,19 +36,21 @@ public class FinishLineFemale : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if (finished){
-        //      if (endcolor.color.a < 1){
+        if (finished){
+             if (endcolor.color.a < 1){
 
-        //         endcolor.color += new Color(0f, 0f, 0f, fading_rate * Time.deltaTime);
+                endcolor.color += new Color(0f, 0f, 0f, fading_rate * Time.deltaTime);
 
-        //     }
-        // }
+            }
+        }
     }
 
     private void OnTriggerEnter(Collider other){
         if (canFinish){
            
             Debug.Log("Player reached Finish");
+            finished = true;
+            endcolor.color = finishColor;
             money = coinshandler.totalMoney;
             moneylost = coinshandler.totalLost;
             message = $"Well done! Despite the gaps in the road, you managed to reach the finishline. In total, you have been granted {money} coins with your research, which also involves women! But lost a total of {moneylost} coins by the complications it brings to collect data on women.";

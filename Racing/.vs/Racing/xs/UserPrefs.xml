@@ -1,10 +1,20 @@
 ﻿<Properties StartupConfiguration="{B32525F9-3CED-DCA1-8D86-05047E283309}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Karting/Scripts/CollectCoin.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Karting/Scripts/KartSystems/TriggerFall.cs">
     <Files>
-      <File FileName="Assets/Karting/Scripts/CoinsHandler.cs" Line="1" Column="1" />
-      <File FileName="Assets/Karting/Scripts/CoinsHandler2.cs" Line="1" Column="1" />
-      <File FileName="Assets/Karting/Scripts/CollectCoin.cs" Line="39" Column="46" />
-      <File FileName="Assets/Karting/Scripts/CollectCoinFemale.cs" Line="39" Column="46" />
+      <File FileName="Assets/Karting/Scripts/UI/DisplayMessageManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Karting/Scripts/UI/DisplayMessage.cs" />
+      <File FileName="Assets/Karting/Scripts/GameModes/PickupObject.cs" Line="73" Column="1" />
+      <File FileName="Assets/CheckPoints.cs" />
+      <File FileName="Assets/PopUp.cs" Line="51" Column="6" />
+      <File FileName="Assets/Karting/Scripts/UI/PoolObjectDef.cs" />
+      <File FileName="Assets/Karting/Scripts/UI/NotificationToast.cs" />
+      <File FileName="Assets/Karting/Scripts/UI/UITable.cs" />
+      <File FileName="Assets/Karting/Scripts/TimeManager.cs" />
+      <File FileName="Assets/Karting/Scripts/PlayerTimer.cs" />
+      <File FileName="Assets/Karting/Scripts/Track/TimeDisplay.cs" />
+      <File FileName="Assets/Karting/Scripts/GameModes/ObjectiveReachTargets.cs" />
+      <File FileName="Assets/Karting/Scripts/GameModes/LapObject.cs" />
+      <File FileName="Assets/Karting/Scripts/KartSystems/TriggerFall.cs" Line="121" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,10 +27,10 @@
                   <Node name="KartSystems" expanded="True">
                     <Node name="Inputs" expanded="True" />
                     <Node name="KartAnimation" expanded="True" />
+                    <Node name="TriggerFall.cs" selected="True" />
                   </Node>
                   <Node name="Track" expanded="True" />
                   <Node name="UI" expanded="True" />
-                  <Node name="CollectCoin.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
@@ -31,7 +41,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ca14e35e-e265-46a4-8383-97149c6e3d9d" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a22a4375-fc16-4883-afcc-316f39c9a1d5" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -111,6 +111,7 @@
      <Compile Include="Assets\Karting\Scripts\ArcadeKartPowerup.cs" />
      <Compile Include="Assets\Karting\Scripts\UI\TimerHUDManager.cs" />
      <Compile Include="Assets\Karting\Scripts\UI\NotificationToast.cs" />
+     <Compile Include="Assets\Karting\Scripts\KartSystems\TriggerFall1.cs" />
      <Compile Include="Assets\Karting\Scripts\PrefabReplacer.cs" />
      <Compile Include="Assets\Karting\Scripts\Utilities\ListExtensions.cs" />
      <Compile Include="Assets\Karting\Scripts\KartSystems\KartAnimation\KartPlayerAnimator.cs" />

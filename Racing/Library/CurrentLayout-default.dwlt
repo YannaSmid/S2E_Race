@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: Console
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 1109
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -119,10 +119,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 1059
-  m_MinSize: {x: 679, y: 342}
-  m_MaxSize: {x: 12004, y: 8042}
+  m_MinSize: {x: 677, y: 321}
+  m_MaxSize: {x: 12002, y: 8021}
   vertical: 0
-  controlID: 131
+  controlID: 76
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,10 +144,10 @@ MonoBehaviour:
     y: 0
     width: 1501
     height: 1059
-  m_MinSize: {x: 403, y: 342}
-  m_MaxSize: {x: 8003, y: 8042}
+  m_MinSize: {x: 402, y: 321}
+  m_MaxSize: {x: 8002, y: 8021}
   vertical: 1
-  controlID: 139
+  controlID: 136
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,10 +169,10 @@ MonoBehaviour:
     y: 0
     width: 1501
     height: 748
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 140
+  controlID: 137
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -192,8 +192,8 @@ MonoBehaviour:
     y: 0
     width: 318
     height: 748
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -246,8 +246,8 @@ MonoBehaviour:
     y: 748
     width: 1501
     height: 311
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 16}
@@ -274,8 +274,8 @@ MonoBehaviour:
     y: 0
     width: 419
     height: 1059
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -340,7 +340,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -399,24 +399,24 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 118}
-      m_SelectedIDs: c44b0000
-      m_LastClickedID: 19396
-      m_ExpandedIDs: 12fbffff8a4b0000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 7a6b0500
+      m_LastClickedID: 355194
+      m_ExpandedIDs: 9030feffba30feff9242feff0e43feff1843feff0a7efeff327efeff0a90feff8690feff9090feff709bfeff989bfeff70adfeffecadfefff6adfeffa6b4feffceb4feffa6c6feff22c7feff2cc7feff90f0feffb8f0feff9002ffff0c03ffff1603ffffc420ffffd03dffff4a54ffff7254ffff4a66ffffc666ffffd066ffff3a73ffff6273ffff3a85ffffb885ffffc285ffffcc9cfffff69cffffd8aeffff54afffff5eaffffffcb2ffff28b3ffff00c5ffff7cc5ffff86c5ffffb2dcffff1efbffffe4540000fa2f0100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: KartClassic_Player2
+        m_OriginalName: KartClassic_Player2
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 27980
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -463,9 +463,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 6.7721252, y: -5.909752, z: 15.857464}
+    m_Target: {x: 1380.5653, y: -1.1041698, z: 17.849512}
     speed: 2
-    m_Value: {x: 6.7721252, y: -5.909752, z: 15.857464}
+    m_Value: {x: 1380.5653, y: -1.1041698, z: 17.849512}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -512,13 +512,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.19773805, y: -0.24182491, z: 0.050403915, w: 0.9486372}
+    m_Target: {x: 0.19742619, y: -0.08575747, z: 0.017335318, w: 0.97643256}
     speed: 2
-    m_Value: {x: 0.19773482, y: -0.24182096, z: 0.050403092, w: 0.9486217}
+    m_Value: {x: 0.19736812, y: -0.08868405, z: 0.017927049, w: 0.9761452}
   m_Size:
-    m_Target: 20.586643
+    m_Target: 15.419964
     speed: 2
-    m_Value: 20.586643
+    m_Value: 15.419964
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -608,22 +608,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Karting/Scripts
+    - Assets/Karting/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 43
   m_LastFolders:
-  - Assets/Karting/Scripts
+  - Assets/Karting/Scenes
   m_LastFoldersGridSize: 43
   m_LastProjectPath: C:\Github\S2E_Race\Racing
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 210}
-    m_SelectedIDs: 98690000
-    m_LastClickedID: 27032
-    m_ExpandedIDs: 000000004465000046650000486500004a6500004c6500004e650000506500005265000054650000
+    scrollPos: {x: 0, y: 178}
+    m_SelectedIDs: 5e740400
+    m_LastClickedID: 291934
+    m_ExpandedIDs: 000000004a6500004c6500004e65000050650000526500005465000056650000586500005a65000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -651,7 +651,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004465000046650000486500004a6500004c6500004e650000506500005265000054650000
+    m_ExpandedIDs: 000000004a6500004c6500004e65000050650000526500005465000056650000586500005a650000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -676,8 +676,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: ccc80400
+    m_LastClickedInstanceID: 313548
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000ae670000b66a0000000000006c6c0000
     m_RenameOverlay:

@@ -33,7 +33,7 @@ public class CollectCoin : MonoBehaviour
             coinshandler.totalMoney += 100;
             coinshandler.updateMoney = true;
             //counterText.text = coinshandler.totalMoney.ToString();
-            Debug.Log(" Collect the coinzzz");
+            //Debug.Log(" Collect the coinzzz");
 
             GameObject audioObject = new GameObject("CoinSound");
             AudioSource audioSource = audioObject.AddComponent<AudioSource>();

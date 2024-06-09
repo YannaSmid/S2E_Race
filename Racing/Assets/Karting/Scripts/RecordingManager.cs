@@ -24,6 +24,7 @@ public class RecordingManager : MonoBehaviour
 
     public bool recording = true;
     public bool stopFem = false;
+    public bool safeInd= false;
 
 
 
@@ -56,22 +57,31 @@ public class RecordingManager : MonoBehaviour
                 dontdestroy.lastRecordedGhostTransform = newGhostTransform;
 
             }
-            if (!stopFem){
-                if(kart2.position != dontdestroy.lastRecordedGhostTransform2.position || kart2.rotation != dontdestroy.lastRecordedGhostTransform2.rotation){
+         
+            if(kart2.position != dontdestroy.lastRecordedGhostTransform2.position || kart2.rotation != dontdestroy.lastRecordedGhostTransform2.rotation){
+             
+                var newGhostTransform2 = new GhostTransform(kart2);
+                dontdestroy.recordedGhostTransforms2.Add(newGhostTransform2);
 
-                    var newGhostTransform2 = new GhostTransform(kart2);
-                    dontdestroy.recordedGhostTransforms2.Add(newGhostTransform2);
-
-                    dontdestroy.lastRecordedGhostTransform2 = newGhostTransform2;
-
+                dontdestroy.lastRecordedGhostTransform2 = newGhostTransform2;
+                dontdestroy.groundPositions.Add(safeInd);
+                if (safeInd){
+                    safeInd = false;
+                    //dontdestroy.groundPositions.Add(dontdestroy.recordedGhostTransforms.Count);
                 }
+
             }
+            
         }
 
         // if (playing){
         //     Play();
         // }
     }
+
+    // public void addIndexToRecording(int index){
+    //     dontdestroy.groundPositions.Add(index);
+    // }
 
     // void Play(){
 

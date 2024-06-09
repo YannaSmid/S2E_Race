@@ -12,6 +12,9 @@ public class DontDestroy : MonoBehaviour
 
     public List<GhostTransform> recordedGhostTransforms2 = new List<GhostTransform>();
     public GhostTransform lastRecordedGhostTransform2;
+
+    //public List<int> groundPositions = new List<int>();
+    public List<bool> groundPositions = new List<bool>();
     
     void Start(){
 

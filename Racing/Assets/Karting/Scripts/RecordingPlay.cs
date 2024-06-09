@@ -14,6 +14,8 @@ public class RecordingPlay : MonoBehaviour
     //public bool recording = true;
     public bool playing = true;
 
+    public bool stopMessage = false;
+
     public DontDestroy dontdestroy;
 
     // Start is called before the first frame update
@@ -54,6 +56,14 @@ public class RecordingPlay : MonoBehaviour
     IEnumerator StartGhost2()
     {
         for (int i=0; i<dontdestroy.recordedGhostTransforms2.Count; i++){
+
+            if (dontdestroy.groundPositions[i]){
+                Debug.Log("Back on the ground");
+            
+                yield return new WaitForSeconds(5);
+                stopMessage = true;
+            }
+
             ghostKart2.position = dontdestroy.recordedGhostTransforms2[i].position;
             ghostKart2.rotation = dontdestroy.recordedGhostTransforms2[i].rotation;
 

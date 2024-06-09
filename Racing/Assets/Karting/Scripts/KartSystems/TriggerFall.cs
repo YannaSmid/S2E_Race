@@ -11,6 +11,7 @@ public class TriggerFall : MonoBehaviour
     bool respawn = false;
 
     public Transform player;
+    Rigidbody playerRigidbody;
 
 
     // for blackout
@@ -51,6 +52,7 @@ public class TriggerFall : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("KartClassic_Player2").transform;
+        playerRigidbody = player.GetComponent<Rigidbody>();
 
         mainCamera = GameObject.Find("Player2Camera");
         hud = GameObject.Find("HUD2").transform;
@@ -85,6 +87,11 @@ public class TriggerFall : MonoBehaviour
                 // if (SceneManager.GetActiveScene().name == "MainScene"){
                 //     recManager.stopFem = true;
                 // }
+                
+                if (playerRigidbody != null)
+                {
+                    StartCoroutine(FreezeDelay(playerRigidbody));  // Start the coroutine
+                }
                 falling = false;
                 //player.gameObject.GetComponent<ArcadeKart>().SetCanMove(true);
             }
@@ -99,6 +106,13 @@ public class TriggerFall : MonoBehaviour
             // }
             player.position = return_pos.position;
             player.rotation = return_rotation;
+            recManager.safeInd = true;
+
+            if (playerRigidbody != null)
+            {
+                playerRigidbody.constraints = RigidbodyConstraints.None;
+            }
+
             respawn = false;
         }
     }
@@ -106,7 +120,7 @@ public class TriggerFall : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (!falling){
-            Debug.Log("I'm FALLING again, I'm FALLING again, I'm FAAAALLLLLIIINGGGGG");
+            //Debug.Log("I'm FALLING again, I'm FALLING again, I'm FAAAALLLLLIIINGGGGG");
             
             //player.gameObject.GetComponent<ArcadeKart>().SetCanMove(false);
             // Lose money
@@ -173,5 +187,11 @@ public class TriggerFall : MonoBehaviour
         {
             Debug.LogError("ArcadeKart script not found on the player object.");
         }
+    }
+
+    IEnumerator FreezeDelay(Rigidbody playerRigidbody)
+    {
+        yield return new WaitForSeconds(0.47f);  // Wait
+        playerRigidbody.constraints = RigidbodyConstraints.FreezePosition;  // Apply the freeze constraint
     }
 }

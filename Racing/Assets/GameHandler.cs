@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour
 {
@@ -26,6 +27,9 @@ public class GameHandler : MonoBehaviour
         }
         if (FemaleAllCheckPointsComplete()){
             FemaleReachedFinish();
+        }
+        if (finishline.finished && finishline2.finished){
+            StartCoroutine(GoToRecording(10));
         }
     }
 
@@ -59,5 +63,12 @@ public class GameHandler : MonoBehaviour
     void FemaleReachedFinish(){
         //Debug.Log("Yippie");
         finishline2.canFinish = true;
+    }
+
+    IEnumerator GoToRecording(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene("RecordingScene");
+        
     }
 }

@@ -7,7 +7,7 @@ using KartGame.KartSystems;
 public class FinishLine : MonoBehaviour
 {
     public bool canFinish = false;
-    private bool finished = false;
+    public bool finished = false;
 
     private GameObject hud1Finish;
     private Canvas hud1Canvas;

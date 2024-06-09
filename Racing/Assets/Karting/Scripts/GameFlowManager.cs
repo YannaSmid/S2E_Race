@@ -94,6 +94,11 @@ public class GameFlowManager : MonoBehaviour
         {
 			k.SetCanMove(true);
         }
+
+        if (SceneManager.GetActiveScene().name == "RecordingScene"){
+            RecordingPlay recPlayer = GameObject.Find("RecordingPlayer").GetComponent<RecordingPlay>();
+            recPlayer.playing = true;
+        }
         m_TimeManager.StartRace();
     }
 

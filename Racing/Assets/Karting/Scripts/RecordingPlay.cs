@@ -12,7 +12,7 @@ public class RecordingPlay : MonoBehaviour
     public Transform ghostKart2;
 
     //public bool recording = true;
-    public bool playing = true;
+    public bool playing;
 
     public bool stopMessage = false;
 

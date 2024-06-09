@@ -59,7 +59,7 @@ public class FinishLine : MonoBehaviour
                 StartCoroutine(FreezeDelay(playerRigidbody));
             }
             money = coinshandler.totalMoney;
-            message = $"Congratulations! You have made it to the finish line and earned a total of {money} coins by doing your research!";
+            message = $"Congratulations! You have made it to the finish line and earned a total of {money} coins for your research!";
             DisplayEndMessage();
             Debug.Log("Display Message");
 

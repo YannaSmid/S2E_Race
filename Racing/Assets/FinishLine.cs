@@ -16,7 +16,6 @@ public class FinishLine : MonoBehaviour
     public float fading_rate = 1.5f;
     public Transform player;
 
-
     // For the end message
     private string message;
 
@@ -30,8 +29,7 @@ public class FinishLine : MonoBehaviour
     void Start()
     {
         hud1Finish = GameObject.Find("HUD1").transform.Find("Finish").gameObject;
-        // Retrieve the correct HUD (HUD1) based on the player
-        hud1Canvas = GameObject.Find("HUD1").GetComponent<Canvas>(); // Ensure HUD1 is the targeted Canvas
+        hud1Canvas = GameObject.Find("HUD1").GetComponent<Canvas>();
         hud1MessageManager = hud1Canvas.GetComponent<DisplayMessageManager>();
         player = GameObject.Find("KartClassic_Player").transform;
     }
@@ -43,9 +41,7 @@ public class FinishLine : MonoBehaviour
         {
             if (green.color.a < 1)
             {
-
                 green.color += new Color(0f, 0f, 0f, fading_rate * Time.deltaTime);
-
             }
         }
     }
@@ -53,20 +49,19 @@ public class FinishLine : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         ArcadeKart kart = player.GetComponent<ArcadeKart>();
-        if (canFinish && other.CompareTag("Player")) // Assuming the player has a tag "Player"
+        if (canFinish && other.CompareTag("Player"))
         {
             Debug.Log("Player reached Finish");
             finished = true;
             Rigidbody playerRigidbody = player.GetComponent<Rigidbody>();
             if (playerRigidbody != null)
             {
-                StartCoroutine(FreezeDelay(playerRigidbody));  // Start the coroutine
+                StartCoroutine(FreezeDelay(playerRigidbody));
             }
             money = coinshandler.totalMoney;
-            message = $"Congratulations! You have made it to the finishline and granted a total of {money} coins by doing your research!";
-            DisplayEndMessage(); // Show popup
+            message = $"Congratulations! You have made it to the finish line and earned a total of {money} coins by doing your research!";
+            DisplayEndMessage();
             Debug.Log("Display Message");
-            // Additional code for disabling control can go here
 
             if (kart != null)
             {
@@ -80,24 +75,31 @@ public class FinishLine : MonoBehaviour
         }
     }
 
-
     private void DisplayEndMessage()
     {
-
         if (hud1MessageManager != null)
         {
             var messageInstance = messagePrefab.getObject(true, hud1MessageManager.DisplayMessageRect.transform);
-            messageInstance.transform.localPosition = Vector3.zero; // Centers the message
-            messageInstance.transform.localRotation = Quaternion.identity; // Resets rotation
-            messageInstance.transform.localScale = Vector3.one; // Ensures scale is not altered
+            messageInstance.transform.localPosition = Vector3.zero;
+            messageInstance.transform.localRotation = Quaternion.identity;
+            messageInstance.transform.localScale = Vector3.one;
 
             NotificationToast notification = messageInstance.GetComponent<NotificationToast>();
             if (notification != null)
             {
                 notification.Initialize(message);
                 hud1MessageManager.DisplayMessageRect.UpdateTable(notification.gameObject);
-                StartCoroutine(ReturnMessageWithDelay(notification.gameObject, notification.TotalRunTime));
+                StartCoroutine(DisplayMesLoop(notification, messageInstance));
             }
+        }
+    }
+
+    IEnumerator DisplayMesLoop(NotificationToast notification, GameObject messageInstance)
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(notification.TotalRunTime - 0.1f); // Slightly before it fades out
+            notification.Initialize(message); // Re-initialize to reset fade timers
         }
     }
 
@@ -109,7 +111,7 @@ public class FinishLine : MonoBehaviour
 
     IEnumerator FreezeDelay(Rigidbody playerRigidbody)
     {
-        yield return new WaitForSeconds(0.47f);  // Wait
-        playerRigidbody.constraints = RigidbodyConstraints.FreezePosition;  // Apply the freeze constraint
+        yield return new WaitForSeconds(0.47f);
+        playerRigidbody.constraints = RigidbodyConstraints.FreezePosition;
     }
 }

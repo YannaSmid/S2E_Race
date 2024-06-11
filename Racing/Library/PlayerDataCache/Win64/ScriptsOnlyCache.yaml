@@ -33,6 +33,7 @@ ScriptsOnlyBuild:
     - InGameMenuManager
     - KartGame.KartSystems.ArcadeEngineAudio
     - KartGame.KartSystems.ArcadeKart
+    - KartGame.KartSystems.GamepadInput
     - KartGame.KartSystems.KartAnimation
     - KartGame.KartSystems.KartPlayerAnimator
     - KartGame.KartSystems.KeyboardInput
@@ -272,6 +273,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4926}
     - Class: 114
       Script: {instanceID: 4938}
+    - Class: 114
+      Script: {instanceID: 5012}
     - Class: 114
       Script: {instanceID: 5078}
     - Class: 114
@@ -2324,4 +2327,4 @@ ScriptsOnlyBuild:
   - Assets/Karting/Scenes/Menu.unity
   - Assets/Karting/Scenes/MainScene.unity
   - Assets/Karting/Scenes/RecordingScene.unity
-  playerPath: C:/Users/nikki/OneDrive/Documenten/RaceTest/Racing.exe
+  playerPath: C:/Users/nikki/OneDrive/Documenten/Testttttt/Racing.exe

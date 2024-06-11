@@ -2324,4 +2324,4 @@ ScriptsOnlyBuild:
   - Assets/Karting/Scenes/Menu.unity
   - Assets/Karting/Scenes/MainScene.unity
   - Assets/Karting/Scenes/RecordingScene.unity
-  playerPath: C:/Users/nikki/OneDrive/Documenten/GitHub/S2E_Race/Racing/RacePlay/Racing.exe
+  playerPath: C:/Users/nikki/OneDrive/Documenten/RaceTest/Racing.exe

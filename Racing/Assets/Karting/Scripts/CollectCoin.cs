@@ -8,7 +8,7 @@ public class CollectCoin : MonoBehaviour
     public bool collected = false;
     CoinsHandler coinshandler;
 
-    public float rotation_speed = 0.5f;
+    public float rotation_speed = 0.6f;
 
     public AudioClip collectSound;
     public float soundVolume = 0.3f;
@@ -23,7 +23,8 @@ public class CollectCoin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.Rotate(0.0f, 1.0f * rotation_speed, 0.0f, Space.Self);
+        // this.transform.Rotate(0.0f, 1.0f * rotation_speed, 0.0f, Space.Self);
+        this.transform.Rotate(0.0f, 2.0f * rotation_speed * Time.deltaTime * 60, 0.0f, Space.Self);
     }
 
     void OnTriggerEnter(Collider other){

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DontDestroy : MonoBehaviour
 {
@@ -18,8 +19,12 @@ public class DontDestroy : MonoBehaviour
     
     void Start(){
 
-        // PlayerPosition = new Vector3(-3.73f, -6.24f, 20.36f);
-
+        // if (SceneManager.GetActiveScene().name == "MainScene"){
+        //     recordedGhostTransforms = new List<GhostTransform>();
+        //     recordedGhostTransforms2.Clear();
+        //     groundPositions.Clear();
+        // }
+        
         if (instance != null){
             Destroy(gameObject);
         }

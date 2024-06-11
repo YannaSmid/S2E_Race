@@ -31,17 +31,17 @@ public class RecordingManager : MonoBehaviour
 
     //public bool playing = false;
 
-    // private List<GhostTransform> recordedGhostTransforms = new List<GhostTransform>();
-    // private GhostTransform lastRecordedGhostTransform;
 
-    // private List<GhostTransform> recordedGhostTransforms2 = new List<GhostTransform>();
-    // private GhostTransform lastRecordedGhostTransform2;
 
     public DontDestroy dontdestroy;
     // Start is called before the first frame update
     void Start()
     {
         dontdestroy = GameObject.Find("DontDestroy").GetComponent<DontDestroy>();
+        dontdestroy.recordedGhostTransforms.Clear();
+        dontdestroy.recordedGhostTransforms2.Clear();
+        dontdestroy.groundPositions.Clear();
+
         
     }
 

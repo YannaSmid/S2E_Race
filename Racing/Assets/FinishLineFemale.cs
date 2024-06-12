@@ -61,7 +61,7 @@ public class FinishLineFemale : MonoBehaviour
             endcolor.color = finishColor;
             money = coinshandler.totalMoney;
             moneylost = coinshandler.totalLost;
-            message = $"Well done! Despite the gaps in the road, you managed to reach the finishline. In total, you have been granted {money} coins for your research, which also involves women! But lost a total of {moneylost} coins by the complications it brings to collect data on women.";
+            message = $"Well done! Despite the gaps in the road, you managed to reach the finish line. In total, you have been granted {money} coins for your research, which also involves women! But lost a total of {moneylost} coins by the complications it brings to collect data on women.";
             DisplayEndMessage(); // Show popup
             Debug.Log("Display Message");
 

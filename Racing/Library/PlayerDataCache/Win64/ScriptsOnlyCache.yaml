@@ -94,12 +94,20 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    Unity.Timeline.Editor.dll:
+    - TimelinePreferences
+    - UnityEditor.Timeline.EditorClip
+    - UnityEditor.Timeline.SequenceHierarchy
+    - UnityEditor.Timeline.TimelineAssetInspector
+    - UnityEditor.Timeline.TimelineAssetViewModel
+    - UnityEditor.Timeline.TimelineWindow
     Unity.Timeline.dll:
     - UnityEngine.Timeline.ActivationPlayableAsset
     - UnityEngine.Timeline.ActivationTrack
     - UnityEngine.Timeline.AnimationTrack
     - UnityEngine.Timeline.AudioPlayableAsset
     - UnityEngine.Timeline.AudioTrack
+    - UnityEngine.Timeline.MarkerTrack
     - UnityEngine.Timeline.TimelineAsset
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -301,6 +309,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5856}
     - Class: 114
       Script: {instanceID: 5896}
+    - Class: 114
+      Script: {instanceID: 5978}
     - Class: 114
       Script: {instanceID: 6002}
     - Class: 114
@@ -621,6 +631,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5690}
     - Class: 114
       Script: {instanceID: 5856}
+    - Class: 114
+      Script: {instanceID: 5978}
     - Class: 114
       Script: {instanceID: 6002}
     - Class: 114
@@ -2327,4 +2339,4 @@ ScriptsOnlyBuild:
   - Assets/Karting/Scenes/Menu.unity
   - Assets/Karting/Scenes/MainScene.unity
   - Assets/Karting/Scenes/RecordingScene.unity
-  playerPath: C:/Users/nikki/OneDrive/Documenten/Testttttt/Racing.exe
+  playerPath: C:/Users/nikki/OneDrive/Documenten/New folder/Racing.exe

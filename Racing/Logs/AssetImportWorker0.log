@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.18f1 (a7d1c678663c) revision 10998214'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 22631.3672; Version 2009; 64bit' Language: 'en' Physical Memory: 15611 MB
+OS: 'Windows 10 Home; OS build 22631.3737; Version 2009; 64bit' Language: 'en' Physical Memory: 15611 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
@@ -15,11 +15,11 @@ C:/Users/nikki/OneDrive/Documenten/GitHub/S2E_Race/Racing
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62894
+49928
 Successfully changed project path to: C:/Users/nikki/OneDrive/Documenten/GitHub/S2E_Race/Racing
 C:/Users/nikki/OneDrive/Documenten/GitHub/S2E_Race/Racing
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 62.58 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 80.67 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.18f1 (a7d1c678663c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Editor/Data/Resources/UnitySubsystems
@@ -35,81 +35,81 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56480
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56116
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001956 seconds.
+Registered in 0.001720 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 53.80 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 56.28 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.835 seconds
+- Completed reload, in  0.975 seconds
 Domain Reload Profiling:
-	ReloadAssembly (836ms)
-		BeginReloadAssembly (41ms)
+	ReloadAssembly (975ms)
+		BeginReloadAssembly (50ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (347ms)
-			LoadAssemblies (37ms)
+		EndReloadAssembly (332ms)
+			LoadAssemblies (44ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (113ms)
+			SetupTypeCache (102ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (20ms)
-			SetupLoadedEditorAssemblies (143ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (146ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (54ms)
+				RefreshPlugins (56ms)
 				BeforeProcessingInitializeOnLoad (8ms)
 				ProcessInitializeOnLoadAttributes (57ms)
-				ProcessInitializeOnLoadMethodAttributes (21ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.011777 seconds.
+Registered in 0.011684 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 51.96 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 118.43 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.418 seconds
+- Completed reload, in  2.466 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1419ms)
-		BeginReloadAssembly (99ms)
+	ReloadAssembly (2468ms)
+		BeginReloadAssembly (206ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (1262ms)
-			LoadAssemblies (92ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (2167ms)
+			LoadAssemblies (197ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (235ms)
+			SetupTypeCache (448ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (806ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (1224ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (52ms)
-				BeforeProcessingInitializeOnLoad (68ms)
-				ProcessInitializeOnLoadAttributes (671ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (119ms)
+				BeforeProcessingInitializeOnLoad (116ms)
+				ProcessInitializeOnLoadAttributes (961ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
 Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3109 Unused Serialized files (Serialized files now loaded: 0)
@@ -117,7 +117,7 @@ System memory in use before: 140.7 MB.
 System memory in use after: 138.0 MB.
 
 Unloading 68 unused Assets to reduce memory usage. Loaded Objects now: 3507.
-Total: 4.933600 ms (FindLiveObjects: 0.412500 ms CreateObjectMapping: 0.168000 ms MarkObjects: 3.292500 ms  DeleteObjects: 1.058900 ms)
+Total: 5.782800 ms (FindLiveObjects: 0.434700 ms CreateObjectMapping: 0.247200 ms MarkObjects: 4.127600 ms  DeleteObjects: 0.971600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -132,158 +132,120 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Karting/Timelines/RaceStart.playable
-  artifactKey: Guid(ef59465c823e959448bdf40fa6e69b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Karting/Timelines/RaceStart.playable using Guid(ef59465c823e959448bdf40fa6e69b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4c8153b2039020c3dfabf867c769fa1') in 0.072865 seconds 
-  Import took 0.078410 seconds .
+  path: Assets/Karting/Scenes/Nikkiscene2.unity
+  artifactKey: Guid(c782c7b4b4b41cd408a568c64b76ff1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Karting/Scenes/Nikkiscene2.unity using Guid(c782c7b4b4b41cd408a568c64b76ff1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17cd9f0585698b1dcb4e26e0824c3f94') in 0.017525 seconds 
+  Import took 0.026835 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000278 seconds.
-  path: Assets/Karting/ModularTrackKit/Materials/Modular_Track_Road.mat
-  artifactKey: Guid(58da84021fce340e9b877f63d3e18336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Karting/ModularTrackKit/Materials/Modular_Track_Road.mat using Guid(58da84021fce340e9b877f63d3e18336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e9437b771123290d6700b2f8b095e2b') in 0.074081 seconds 
-  Import took 0.078660 seconds .
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 12.83 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 82.1 MB.
-System memory in use after: 79.4 MB.
-
-Unloading 58 unused Assets to reduce memory usage. Loaded Objects now: 3547.
-Total: 5.843800 ms (FindLiveObjects: 0.427500 ms CreateObjectMapping: 0.196700 ms MarkObjects: 4.194500 ms  DeleteObjects: 1.023900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 25.663732 seconds.
-  path: Assets/Karting/Timelines/RaceStart 1.playable
-  artifactKey: Guid(18dc7697a1588ca47a708755440f3df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Karting/Timelines/RaceStart 1.playable using Guid(18dc7697a1588ca47a708755440f3df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f6eff11cf0cf680ec476e8f236c9c3a') in 0.006344 seconds 
-  Import took 0.011370 seconds .
+  Time since last request: 0.000308 seconds.
+  path: Assets/Karting/Scenes/OriginalScene.unity
+  artifactKey: Guid(92786e23da2af4a4f8803aaf44c47121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Karting/Scenes/OriginalScene.unity using Guid(92786e23da2af4a4f8803aaf44c47121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0b44d1b75ace482af0cf034415eb3fb') in 0.004560 seconds 
+  Import took 0.014046 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002132 seconds.
-  path: Assets/Karting/Timelines/RaceStart 1.playable
-  artifactKey: Guid(18dc7697a1588ca47a708755440f3df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Karting/Timelines/RaceStart 1.playable using Guid(18dc7697a1588ca47a708755440f3df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f6eff11cf0cf680ec476e8f236c9c3a') in 0.006234 seconds 
-  Import took 0.012210 seconds .
+  Time since last request: 0.000427 seconds.
+  path: Assets/Karting/Scenes/Menu.unity
+  artifactKey: Guid(672b5f8f2fdd224479d65e7d0dae1b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Karting/Scenes/Menu.unity using Guid(672b5f8f2fdd224479d65e7d0dae1b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95525b1daa2b217375bb6182245c496a') in 0.003649 seconds 
+  Import took 0.012004 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.717334 seconds.
-  path: Assets/Karting/Audio/UI/1-second-of-silence.mp3
-  artifactKey: Guid(b3ac37ff91ee076439e3de30c2afe55c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Karting/Audio/UI/1-second-of-silence.mp3 using Guid(b3ac37ff91ee076439e3de30c2afe55c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '782888052bf516c39faf7cf576c85b11') in 0.097842 seconds 
-  Import took 0.102914 seconds .
+  Time since last request: 5.648484 seconds.
+  path: Assets/Karting/Scenes/WinScene.unity
+  artifactKey: Guid(d6801f2e59f75ee4b919cf5da4e48e3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Karting/Scenes/WinScene.unity using Guid(d6801f2e59f75ee4b919cf5da4e48e3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '710524652408f06986a1909e5f439f3e') in 0.004686 seconds 
+  Import took 0.015239 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001371 seconds.
-  path: Assets/Karting/Audio/UI/1-second-of-silence.mp3
-  artifactKey: Guid(b3ac37ff91ee076439e3de30c2afe55c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Karting/Audio/UI/1-second-of-silence.mp3 using Guid(b3ac37ff91ee076439e3de30c2afe55c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '782888052bf516c39faf7cf576c85b11') in 0.011103 seconds 
-  Import took 0.016990 seconds .
+  Time since last request: 0.957597 seconds.
+  path: Assets/Karting/Scenes/YannaScene.unity
+  artifactKey: Guid(0d29717cf0203314ead406dc4bbb3fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Karting/Scenes/YannaScene.unity using Guid(0d29717cf0203314ead406dc4bbb3fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4c052758dc8a2915d95e316752c8b27') in 0.003897 seconds 
+  Import took 0.013285 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 141.529941 seconds.
-  path: Assets/Karting/Audio/MainAudioMixer.mixer
-  artifactKey: Guid(a8f4169f766f87c499f5e80607977e71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Karting/Audio/MainAudioMixer.mixer using Guid(a8f4169f766f87c499f5e80607977e71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '922180c669df0dceebc91bd6b0bf7533') in 0.007359 seconds 
-  Import took 0.012805 seconds .
+  Time since last request: 2.406967 seconds.
+  path: Assets/Karting/Scenes/YannaScene2.unity
+  artifactKey: Guid(0b647359024555441ad7ff4faddd877b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Karting/Scenes/YannaScene2.unity using Guid(0b647359024555441ad7ff4faddd877b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '156bbdb3781ce3a6845e403d2ba9625a') in 0.004394 seconds 
+  Import took 0.013838 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000322 seconds.
-  path: Assets/Karting/Audio/ReplayAudioMixer.mixer
-  artifactKey: Guid(fcc71635aab95ff4fbdf1880bf2afa2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Karting/Audio/ReplayAudioMixer.mixer using Guid(fcc71635aab95ff4fbdf1880bf2afa2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94dd186533a1e241f14d5d104e1151e5') in 0.004641 seconds 
-  Import took 0.010254 seconds .
+  Time since last request: 0.000673 seconds.
+  path: Assets/Karting/Scenes/YannaScene2.unity
+  artifactKey: Guid(0b647359024555441ad7ff4faddd877b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Karting/Scenes/YannaScene2.unity using Guid(0b647359024555441ad7ff4faddd877b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '156bbdb3781ce3a6845e403d2ba9625a') in 0.004550 seconds 
+  Import took 0.013392 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/Karting/Audio/MainAudioMixer.mixer
-  artifactKey: Guid(a8f4169f766f87c499f5e80607977e71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Karting/Audio/MainAudioMixer.mixer using Guid(a8f4169f766f87c499f5e80607977e71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '922180c669df0dceebc91bd6b0bf7533') in 0.005202 seconds 
-  Import took 0.009643 seconds .
+  Time since last request: 1.402563 seconds.
+  path: Assets/Karting/Scenes/YannaScene3.unity
+  artifactKey: Guid(1caaa487f34577d40ae554287eaf37e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Karting/Scenes/YannaScene3.unity using Guid(1caaa487f34577d40ae554287eaf37e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '849ae39c313dc444c224cb5795015141') in 0.004680 seconds 
+  Import took 0.016371 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.003931 seconds.
-  path: Assets/Karting/Audio/ReplayAudioMixer.mixer
-  artifactKey: Guid(fcc71635aab95ff4fbdf1880bf2afa2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Karting/Audio/ReplayAudioMixer.mixer using Guid(fcc71635aab95ff4fbdf1880bf2afa2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94dd186533a1e241f14d5d104e1151e5') in 0.004538 seconds 
-  Import took 0.010488 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 77.986892 seconds.
-  path: Assets/Karting/Timelines/RaceStart 1.playable
-  artifactKey: Guid(18dc7697a1588ca47a708755440f3df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Karting/Timelines/RaceStart 1.playable using Guid(18dc7697a1588ca47a708755440f3df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e096a7ccdfc2333db5f4ad15bb6d61c') in 0.006637 seconds 
-  Import took 0.012869 seconds .
+  Time since last request: 0.000499 seconds.
+  path: Assets/Karting/Scenes/YannaScene3.unity
+  artifactKey: Guid(1caaa487f34577d40ae554287eaf37e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Karting/Scenes/YannaScene3.unity using Guid(1caaa487f34577d40ae554287eaf37e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '849ae39c313dc444c224cb5795015141') in 0.004907 seconds 
+  Import took 0.014480 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.012028 seconds.
+Registered in 0.015693 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.80 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.910 seconds
+- Completed reload, in  1.136 seconds
 Domain Reload Profiling:
-	ReloadAssembly (910ms)
-		BeginReloadAssembly (108ms)
+	ReloadAssembly (1136ms)
+		BeginReloadAssembly (140ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (748ms)
-			LoadAssemblies (84ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (933ms)
+			LoadAssemblies (112ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (212ms)
+			SetupTypeCache (250ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (27ms)
-			SetupLoadedEditorAssemblies (344ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (431ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (53ms)
-				ProcessInitializeOnLoadAttributes (274ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (333ms)
 				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.46 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3078 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 141.5 MB.
-System memory in use after: 138.9 MB.
+System memory in use before: 138.3 MB.
+System memory in use after: 135.6 MB.
 
-Unloading 61 unused Assets to reduce memory usage. Loaded Objects now: 3552.
-Total: 4.425100 ms (FindLiveObjects: 0.350200 ms CreateObjectMapping: 0.129900 ms MarkObjects: 2.996500 ms  DeleteObjects: 0.947100 ms)
+Unloading 61 unused Assets to reduce memory usage. Loaded Objects now: 3510.
+Total: 6.941100 ms (FindLiveObjects: 0.472400 ms CreateObjectMapping: 0.204100 ms MarkObjects: 4.993300 ms  DeleteObjects: 1.268700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -298,18 +260,91 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 41.756015 seconds.
-  path: Assets/Karting/Scenes/RecordingScene.unity
-  artifactKey: Guid(80158ed514da3784d8e898b602e8ed81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Karting/Scenes/RecordingScene.unity using Guid(80158ed514da3784d8e898b602e8ed81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '520e34805822336a8b0cc8e095903019') in 0.012565 seconds 
-  Import took 0.018672 seconds .
+  Time since last request: 230.680203 seconds.
+  path: Assets/Karting/Scenes/MainScene.unity
+  artifactKey: Guid(2ef1fbcb5f84ec54c803c817789ec948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Karting/Scenes/MainScene.unity using Guid(2ef1fbcb5f84ec54c803c817789ec948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fd3a4cb28b87996e4f6ea184ba638d4') in 0.017687 seconds 
+  Import took 0.027455 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 51.265883 seconds.
+  Time since last request: 374.847531 seconds.
+  path: Assets/Karting/Scenes/LoseScene.unity
+  artifactKey: Guid(9c449e01147824b419cda406398fb2e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Karting/Scenes/LoseScene.unity using Guid(9c449e01147824b419cda406398fb2e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25ec63bb000965ceaa5ef8c503827625') in 0.019555 seconds 
+  Import took 0.027061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.047186 seconds.
+  path: Assets/Karting/Scenes/RecordingScene.unity
+  artifactKey: Guid(80158ed514da3784d8e898b602e8ed81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Karting/Scenes/RecordingScene.unity using Guid(80158ed514da3784d8e898b602e8ed81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3d8c4c04f4ee3ef928bd73c20390307') in 0.004476 seconds 
+  Import took 0.014393 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012945 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.065 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1066ms)
+		BeginReloadAssembly (115ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (894ms)
+			LoadAssemblies (103ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (259ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (398ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (314ms)
+				ProcessInitializeOnLoadMethodAttributes (3ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3078 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 138.4 MB.
+System memory in use after: 135.7 MB.
+
+Unloading 61 unused Assets to reduce memory usage. Loaded Objects now: 3513.
+Total: 5.697100 ms (FindLiveObjects: 0.324400 ms CreateObjectMapping: 0.227100 ms MarkObjects: 3.949800 ms  DeleteObjects: 1.194500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 200.284931 seconds.
   path: Assets/Karting/Scenes/MainScene.unity
   artifactKey: Guid(2ef1fbcb5f84ec54c803c817789ec948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Karting/Scenes/MainScene.unity using Guid(2ef1fbcb5f84ec54c803c817789ec948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76e78e79c21721176dfe654e02d93cce') in 0.003669 seconds 
-  Import took 0.009884 seconds .
+Start importing Assets/Karting/Scenes/MainScene.unity using Guid(2ef1fbcb5f84ec54c803c817789ec948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b62777c1257037c353d8ccf833c0651') in 0.014476 seconds 
+  Import took 0.024610 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
